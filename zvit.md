@@ -33,19 +33,19 @@ LAB-LIST
 CL-USER> (setq lab-list (list 'alpha 10 (cons 'beta (list 20)) nil 'gamma))
 (ALPHA 10 (BETA 20) NIL GAMMA)
 CL-USER> 
-;; Пункт 2: 
+;; Пункт 1: 
 CL-USER> (car lab-list)
 ALPHA
-;; Пункт 3: 
+;; Пункт 2: 
 CL-USER> (cdr lab-list)
 (10 (BETA 20) NIL GAMMA)
-;; Пункт 4: 
+;; Пункт 3: 
 CL-USER> (third lab-list)
 (BETA 20)
-;; Пункт 5: 
+;; Пункт 4: 
 CL-USER> (last lab-list)
 (GAMMA)
-;; Пункт 6: 
+;; Пункт 5: 
 CL-USER> (atom (car lab-list))
 T
 CL-USER> (atom (third lab-list))
@@ -54,13 +54,16 @@ CL-USER> (listp (third lab-list))
 T
 CL-USER> (listp (car lab-list))
 NIL
-;; Пункт 7: Інші предикати
+;; Пункт 6: Інші предикати
 CL-USER> (numberp (second lab-list))
 T
 CL-USER> (null (fourth lab-list))
 T
 CL-USER> (symbolp (car lab-list))
 T
+;; Пункт 7:
+CL-USER> (append lab-list (third lab-list))
+(ALPHA 10 (BETA 20) NIL GAMMA BETA 20)
 ```
 ## Варіант 17
 <p align="center"> <img src="lab-1-variant.png" width="500"> </p>
