@@ -55,11 +55,11 @@ T
 CL-USER> (listp (car lab-list))
 NIL
 ;; Пункт 7: Інші предикати
-CL-USER> (numberp (second my-list))
+CL-USER> (numberp (second lab-list))
 T
-CL-USER> (null (fourth my-list))
+CL-USER> (null (fourth lab-list))
 T
-CL-USER> (symbolp (car my-list))
+CL-USER> (symbolp (car lab-list))
 T
 ```
 ## Варіант 17
